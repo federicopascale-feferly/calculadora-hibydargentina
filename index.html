@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #8486ff; -webkit-text-stroke: #8486ff}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #53d160; -webkit-text-stroke: #53d160}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #fc7dd1; -webkit-text-stroke: #fc7dd1}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #fed611; -webkit-text-stroke: #fed611}
+    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #ffffff; -webkit-text-stroke: #ffffff}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #ffffff; -webkit-text-stroke: #ffffff; min-height: 16.0px}
+    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.0px Menlo; color: #626262; -webkit-text-stroke: #626262}
+    span.s1 {font-kerning: none; background-color: #101010}
+    span.s2 {font-kerning: none; color: #ffffff; background-color: #101010; -webkit-text-stroke: 0px #ffffff}
+    span.s3 {font-kerning: none; color: #626262; background-color: #101010; -webkit-text-stroke: 0px #626262}
+    span.s4 {font-kerning: none; color: #fc7dd1; background-color: #101010; -webkit-text-stroke: 0px #fc7dd1}
+    span.s5 {font-kerning: none; color: #fed611; background-color: #101010; -webkit-text-stroke: 0px #fed611}
+    span.s6 {font-kerning: none; color: #53d160; background-color: #101010; -webkit-text-stroke: 0px #53d160}
+    span.s7 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">&lt;!DOCTYPE</span><span class="s2"> html</span><span class="s1">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s4">html</span><span class="s2"> </span><span class="s5">lang</span><span class="s3">=</span><span class="s1">"es"</span><span class="s2"> </span><span class="s5">class</span><span class="s3">=</span><span class="s1">"dark"</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s2"> </span><span class="s1">charset</span><span class="s3">=</span><span class="s6">"UTF-8"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">meta</span><span class="s2"> </span><span class="s5">name</span><span class="s3">=</span><span class="s1">"viewport"</span><span class="s2"> </span><span class="s5">content</span><span class="s3">=</span><span class="s1">"width=device-width, initial-scale=1.0"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">title</span><span class="s3">&gt;</span><span class="s1">Hi BYD Argentina | Calculadora</span><span class="s3">&lt;/</span><span class="s4">title</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s2"> </span><span class="s5">src</span><span class="s3">=</span><span class="s1">"https://cdn.tailwindcss.com"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s2"> </span><span class="s5">crossorigin</span><span class="s2"> </span><span class="s5">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/react@18/umd/react.production.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s2"> </span><span class="s5">crossorigin</span><span class="s2"> </span><span class="s5">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s2"> </span><span class="s5">src</span><span class="s3">=</span><span class="s1">"https://unpkg.com/@babel/standalone/babel.min.js"</span><span class="s3">&gt;&lt;/</span><span class="s4">script</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">link</span><span class="s2"> </span><span class="s5">href</span><span class="s3">=</span><span class="s1">"https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&amp;display=swap"</span><span class="s2"> </span><span class="s5">rel</span><span class="s3">=</span><span class="s1">"stylesheet"</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>tailwind</span><span class="s3">.</span><span class="s1">config </span><span class="s3">=</span><span class="s1"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>darkMode</span><span class="s3">:</span><span class="s1"> </span><span class="s6">'class'</span><span class="s3">,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>theme</span><span class="s3">:</span><span class="s1"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>extend</span><span class="s3">:</span><span class="s1"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>fontFamily</span><span class="s3">:</span><span class="s1"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>sans</span><span class="s3">:</span><span class="s1"> </span><span class="s3">[</span><span class="s6">'Outfit'</span><span class="s3">,</span><span class="s1"> </span><span class="s6">'sans-serif'</span><span class="s3">],</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>colors</span><span class="s3">:</span><span class="s1"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>neon</span><span class="s3">:</span><span class="s1"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>blue</span><span class="s3">:</span><span class="s1"> </span><span class="s6">'#00f0ff'</span><span class="s3">,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>purple</span><span class="s3">:</span><span class="s1"> </span><span class="s6">'#8a2be2'</span><span class="s3">,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>dark</span><span class="s3">:</span><span class="s1"> </span><span class="s6">'#0a0a0f'</span><span class="s3">,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>card</span><span class="s3">:</span><span class="s1"> </span><span class="s6">'#13151a'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span></span><span class="s3">}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>backgroundImage</span><span class="s3">:</span><span class="s1"> </span><span class="s3">{</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                        </span></span><span class="s1">'gradient-radial'</span><span class="s3">:</span><span class="s2"> </span><span class="s1">'radial-gradient(var(--tw-gradient-stops))'</span><span class="s3">,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span></span><span class="s3">}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span></span><span class="s3">}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s3">}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">}</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">    </span></span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">body</span><span class="s1"> </span><span class="s3">{</span><span class="s1"><span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s5">font-family:</span><span class="s2"> </span><span class="s1">'Outfit'</span><span class="s3">,</span><span class="s2"> </span><span class="s1">sans-serif</span><span class="s3">;</span><span class="s2"><span class="Apple-converted-space"> </span></span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s1">background-color:</span><span class="s2"> </span><span class="s6">#0a0a0f</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">color:</span><span class="s1"> </span><span class="s6">#e2e8f0</span><span class="s3">;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s5">background-image:</span><span class="s2"> </span><span class="s1">radial-gradient(circle</span><span class="s2"> </span><span class="s1">at</span><span class="s2"> </span><span class="s1">top</span><span class="s2"> </span><span class="s1">right</span><span class="s3">,</span><span class="s2"> </span><span class="s1">rgba(0</span><span class="s3">,</span><span class="s2"> </span><span class="s1">240</span><span class="s3">,</span><span class="s2"> </span><span class="s1">255</span><span class="s3">,</span><span class="s2"> </span><span class="s1">0.1)</span><span class="s3">,</span><span class="s2"> </span><span class="s1">transparent</span><span class="s2"> </span><span class="s1">40%)</span><span class="s3">,</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">                              </span></span><span class="s1">radial-gradient(circle</span><span class="s2"> </span><span class="s1">at</span><span class="s2"> </span><span class="s1">bottom</span><span class="s2"> </span><span class="s1">left</span><span class="s3">,</span><span class="s2"> </span><span class="s1">rgba(138</span><span class="s3">,</span><span class="s2"> </span><span class="s1">43</span><span class="s3">,</span><span class="s2"> </span><span class="s1">226</span><span class="s3">,</span><span class="s2"> </span><span class="s1">0.1)</span><span class="s3">,</span><span class="s2"> </span><span class="s1">transparent</span><span class="s2"> </span><span class="s1">40%)</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p7"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s1">/* Modern Slider Styling */</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s4">input</span><span class="s3">[</span><span class="s6">type</span><span class="s3">=</span><span class="s6">range</span><span class="s3">]</span><span class="s1"> </span><span class="s3">{</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s1">-webkit-appearance:</span><span class="s2"> </span><span class="s6">none</span><span class="s3">;</span><span class="s2"><span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">appearance:</span><span class="s1"> </span><span class="s6">none</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">width:</span><span class="s1"> </span><span class="s6">100%</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">background:</span><span class="s1"> </span><span class="s6">transparent</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s1">input</span><span class="s3">[</span><span class="s6">type</span><span class="s3">=</span><span class="s6">range</span><span class="s3">]</span><span class="s1">::-webkit-slider-thumb</span><span class="s2"> </span><span class="s3">{</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s1">-webkit-appearance:</span><span class="s2"> </span><span class="s6">none</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">height:</span><span class="s1"> </span><span class="s6">24px</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">width:</span><span class="s1"> </span><span class="s6">24px</span><span class="s3">;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s1">border-radius:</span><span class="s2"> </span><span class="s6">50%</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">background:</span><span class="s1"> </span><span class="s6">#00f0ff</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">cursor:</span><span class="s1"> </span><span class="s6">pointer</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">margin-top:</span><span class="s1"> </span><span class="s6">-8px</span><span class="s3">;</span><span class="s1"><span class="Apple-converted-space"> </span></span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s5">box-shadow:</span><span class="s2"> </span><span class="s1">0</span><span class="s2"> </span><span class="s1">0</span><span class="s2"> </span><span class="s1">15px</span><span class="s2"> </span><span class="s1">rgba(0</span><span class="s3">,</span><span class="s2"> </span><span class="s1">240</span><span class="s3">,</span><span class="s2"> </span><span class="s1">255</span><span class="s3">,</span><span class="s2"> </span><span class="s1">0.6)</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">border:</span><span class="s1"> </span><span class="s6">2px</span><span class="s1"> </span><span class="s6">solid</span><span class="s1"> </span><span class="s6">#fff</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">transition:</span><span class="s1"> </span><span class="s6">transform</span><span class="s1"> </span><span class="s6">0.1s</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s1">input</span><span class="s3">[</span><span class="s6">type</span><span class="s3">=</span><span class="s6">range</span><span class="s3">]</span><span class="s1">::-webkit-slider-thumb:hover</span><span class="s2"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">transform:</span><span class="s1"> </span><span class="s6">scale(1.1)</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s1">input</span><span class="s3">[</span><span class="s6">type</span><span class="s3">=</span><span class="s6">range</span><span class="s3">]</span><span class="s1">::-webkit-slider-runnable-track</span><span class="s2"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">width:</span><span class="s1"> </span><span class="s6">100%</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">height:</span><span class="s1"> </span><span class="s6">8px</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">cursor:</span><span class="s1"> </span><span class="s6">pointer</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">background:</span><span class="s1"> </span><span class="s6">#2d3748</span><span class="s3">;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s1">border-radius:</span><span class="s2"> </span><span class="s6">4px</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">border:</span><span class="s1"> </span><span class="s6">1px</span><span class="s1"> </span><span class="s6">solid</span><span class="s1"> </span><span class="s6">#1a202c</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">        </span></span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s1">input</span><span class="s3">[</span><span class="s6">type</span><span class="s3">=</span><span class="s6">range</span><span class="s3">]</span><span class="s1">:focus</span><span class="s2"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">outline:</span><span class="s1"> </span><span class="s6">none</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">}</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">        </span></span><span class="s1">.glass-panel</span><span class="s2"> </span><span class="s3">{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span></span><span class="s5">background:</span><span class="s1"> </span><span class="s6">rgba(19</span><span class="s3">,</span><span class="s1"> </span><span class="s6">21</span><span class="s3">,</span><span class="s1"> </span><span class="s6">26</span><span class="s3">,</span><span class="s1"> </span><span class="s6">0.7)</span><span class="s3">;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s1">backdrop-filter:</span><span class="s2"> </span><span class="s6">blur(16px)</span><span class="s3">;</span></p>
+<p class="p4"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s1">-webkit-backdrop-filter:</span><span class="s2"> </span><span class="s6">blur(16px)</span><span class="s3">;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">            </span></span><span class="s5">border:</span><span class="s2"> </span><span class="s1">1px</span><span class="s2"> </span><span class="s1">solid</span><span class="s2"> </span><span class="s1">rgba(255</span><span class="s3">,</span><span class="s2"> </span><span class="s1">255</span><span class="s3">,</span><span class="s2"> </span><span class="s1">255</span><span class="s3">,</span><span class="s2"> </span><span class="s1">0.05)</span><span class="s3">;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span></span><span class="s3">}</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">style</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s1">head</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s3">&lt;</span><span class="s4">body</span><span class="s2"> </span><span class="s5">class</span><span class="s3">=</span><span class="s1">"antialiased min-h-screen text-slate-200"</span><span class="s3">&gt;</span></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">div</span><span class="s2"> </span><span class="s5">id</span><span class="s3">=</span><span class="s1">"root"</span><span class="s3">&gt;&lt;/</span><span class="s4">div</span><span class="s3">&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p2"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;</span><span class="s4">script</span><span class="s2"> </span><span class="s5">type</span><span class="s3">=</span><span class="s1">"text/babel"</span><span class="s3">&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>// Datos actualizados de los vehículos</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const CAR_MODELS = [</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>id: 'atto-2',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>name: 'ATTO 2',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>type: 'PHEV',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>batteryKw: 18.3,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxAc: 6.6,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxDc: 0,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>icon: (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v1m0 14v1m8-8h1M4 12H3" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>id: 'yuan-up',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Yuan Up',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>type: 'EV',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>batteryKw: 45.1,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxAc: 6.6,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxDc: 65,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>icon: (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 16a2 2 0 11-4 0 2 2 0 014 0zM20 16a2 2 0 11-4 0 2 2 0 014 0z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 8h2a2 2 0 012 2v6h-2M4 8h10l1.5-3H6.5L4 8z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 8v8h2" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>id: 'dolphin-mini-gl',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Dolphin Mini GL',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>type: 'EV',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>batteryKw: 30.08,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxAc: 6.6,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxDc: 65,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>icon: (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>id: 'dolphin-mini-gs',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Dolphin Mini GS',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>type: 'EV',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>batteryKw: 43.2,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxAc: 6.6,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxDc: 85,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>icon: (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>id: 'shark',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Shark',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>type: 'PHEV',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>batteryKw: 29.58,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxAc: 6.6,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxDc: 40,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>icon: (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 18a2 2 0 11-4 0 2 2 0 014 0zM20 18a2 2 0 11-4 0 2 2 0 014 0z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 10h4a2 2 0 012 2v6h-2M4 10h10l2-4H4v4z" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 10v8h2" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2 14h2" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>},</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>{</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>id: 'song-pro',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>name: 'Song Pro',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>type: 'PHEV',</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>batteryKw: 18.3,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxAc: 6.6,</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>maxDc: 0, // No soporta DC</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>icon: (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 13l4 4L19 7" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4v1m0 14v1m8-8h1M4 12H3" /&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const App = () =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [selectedCarId, setSelectedCarId] = React.useState(CAR_MODELS[0].id);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [chargerType, setChargerType] = React.useState('AC');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [chargerPower, setChargerPower] = React.useState(7);<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const [currentBattery, setCurrentBattery] = React.useState(25); // Estado inicial ajustado al mínimo de PHEVs</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const selectedCar = CAR_MODELS.find(c =&gt; c.id === selectedCarId);</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Evitar que un auto sin DC (ATTO 2) se quede en modo DC, y ajustar límites si se usa el Wallbox BYD</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>React.useEffect(() =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>if (selectedCar.maxDc === 0 &amp;&amp; chargerType === 'DC') {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>setChargerType('AC');</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>setChargerPower(7);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>if (chargerType === 'BYD' || chargerType === 'AC') {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>const maxPowerLimit = (selectedCar.id === 'atto-2' || selectedCar.id === 'song-pro') ? 7 : 22;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>if (chargerPower &gt; maxPowerLimit) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>setChargerPower(maxPowerLimit);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>// Forzar mínimo de 25% para modelos DM-i al cambiar de auto</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>const isDmi = selectedCar.id === 'atto-2' || selectedCar.id === 'song-pro';</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>if (isDmi &amp;&amp; currentBattery &lt; 25) {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>setCurrentBattery(25);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>}, [selectedCarId, chargerType, selectedCar.maxDc, chargerPower, selectedCar.id, currentBattery]);</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Handlers</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const handleChargerTypeChange = (type) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>if (type === 'DC' &amp;&amp; selectedCar.maxDc === 0) return; // Bloquear si no soporta</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>setChargerType(type);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>if (type === 'EMERGENCY') {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>setChargerPower(1.5);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} else if (type === 'BYD') {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>const maxBydPower = (selectedCar.id === 'atto-2' || selectedCar.id === 'song-pro') ? 7 : 22;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>setChargerPower(maxBydPower);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} else if (type === 'AC') {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>const maxAcPower = (selectedCar.id === 'atto-2' || selectedCar.id === 'song-pro') ? 7 : 22;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>setChargerPower(maxAcPower);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>} else {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>setChargerPower(50);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Cálculos</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Porcentaje a cargar = 80% - % actual</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const percentageToCharge = 80 - currentBattery;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Energía objetivo en kWh a recargar</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const targetEnergyKw = (percentageToCharge / 100) * selectedCar.batteryKw;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Límite del coche</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const maxCarPower = (chargerType === 'AC' || chargerType === 'EMERGENCY' || chargerType === 'BYD') ? selectedCar.maxAc : selectedCar.maxDc;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const actualChargingPower = Math.min(chargerPower, maxCarPower);</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Tiempo = Energía / Potencia (Asumiendo un 90% de eficiencia)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const efficiency = 0.90;<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const timeInHours = (targetEnergyKw / actualChargingPower) / efficiency;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const hours = Math.floor(timeInHours);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const minutes = Math.round((timeInHours - hours) * 60);</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>// Costos</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const costYPF = targetEnergyKw * 892;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const costChargeBox = targetEnergyKw * 700;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const totalMinutesForCost = timeInHours * 60;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const costShell = totalMinutesForCost * 609;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const costEPE = targetEnergyKw * 350;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const isHomeCharging = chargerType === 'EMERGENCY' || chargerType === 'BYD';</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>const formatCurrency = (amount) =&gt; {</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>return new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', maximumFractionDigits: 0 }).format(amount);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>};</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>return (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;div className="max-w-6xl mx-auto p-4 sm:p-8 min-h-screen flex flex-col justify-center"&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                    </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>{/* Header */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="text-center mb-12"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;h1 className="text-4xl md:text-6xl font-bold mb-4 tracking-tight"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>Hi BYD &lt;span className="text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-blue-500"&gt;Argentina&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/h1&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p className="text-slate-400 text-lg"&gt;Calculadora de tiempo de carga para modelos de BYD en Argentina&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="grid grid-cols-1 lg:grid-cols-3 gap-8"&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>{/* Columna Izquierda: Controles */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="lg:col-span-2 space-y-6"&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>{/* Panel 1: Vehículo */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="glass-panel rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="absolute top-0 left-0 w-1 h-full bg-neon-blue shadow-[0_0_10px_#00f0ff]"&gt;&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;h2 className="text-xl font-semibold mb-6 flex items-center gap-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;span className="text-neon-blue font-bold text-2xl"&gt;01.&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>Selecciona el modelo</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/h2&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="grid grid-cols-2 sm:grid-cols-3 gap-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>{CAR_MODELS.map(car =&gt; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>key={car.id}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>onClick={() =&gt; setSelectedCarId(car.id)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>className={`flex flex-col items-center justify-center p-4 rounded-2xl transition-all duration-300 border ${</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>selectedCarId === car.id<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>? 'border-neon-blue bg-neon-blue/10 text-white shadow-[0_0_15px_rgba(0,240,255,0.2)]'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>: 'border-slate-800 bg-slate-900/50 text-slate-400 hover:border-slate-600 hover:bg-slate-800'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>}`}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className={`${selectedCarId === car.id ? 'text-neon-blue' : 'text-slate-500'}`}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>{car.icon}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className="font-semibold text-xs md:text-sm text-center leading-tight"&gt;{car.name}&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className="text-[10px] mt-1 opacity-70"&gt;{car.batteryKw} kWh&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>))}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>{}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>{/* Panel 2: Estado de Batería y Cargador */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="glass-panel rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="absolute top-0 left-0 w-1 h-full bg-purple-500 shadow-[0_0_10px_#a855f7]"&gt;&lt;/div&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="grid grid-cols-1 md:grid-cols-2 gap-10"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>{/* Batería Actual */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;h2 className="text-xl font-semibold mb-6 flex items-center gap-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className="text-purple-500 font-bold text-2xl"&gt;02.&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>Batería actual</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/h2&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="flex justify-between items-end mb-4"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;label className="text-slate-400 text-sm"&gt;Estado de carga inicial&lt;/label&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className="text-3xl font-bold text-white"&gt;{currentBattery}%&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;input<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>type="range"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>min={(selectedCar.id === 'atto-2' || selectedCar.id === 'song-pro') ? "25" : "0"}<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>max="79"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>step="1"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>value={currentBattery}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>onChange={(e) =&gt; setCurrentBattery(Number(e.target.value))}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>className="w-full"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>/&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="flex justify-between text-xs text-slate-500 mt-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span&gt;{(selectedCar.id === 'atto-2' || selectedCar.id === 'song-pro') ? '25% (Mínimo operativo)' : '0% (Vacía)'}&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span&gt;79%&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                                        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="mt-6 bg-slate-900/80 rounded-xl p-4 border border-slate-800"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;p className="text-sm text-slate-300"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>Objetivo de carga fijo al &lt;span className="text-neon-blue font-bold"&gt;80%&lt;/span&gt;.</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;p className="text-xs text-slate-500 mt-1"&gt;Por recomendación para preservar la vida útil de la batería.&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>{/* Configuración de Cargador */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;h2 className="text-xl font-semibold mb-6 flex items-center gap-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className="text-purple-500 font-bold text-2xl"&gt;03.&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>Potencia</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/h2&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                                        </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="grid grid-cols-2 gap-2 mb-6 bg-slate-900 p-2 rounded-xl border border-slate-800"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={() =&gt; handleChargerTypeChange('EMERGENCY')}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className={`py-2 text-[11px] sm:text-sm rounded-lg font-medium transition-all ${</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>chargerType === 'EMERGENCY'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>? 'bg-slate-700 text-white shadow-sm'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>: 'text-slate-400 hover:text-white'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>}`}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>Emergencia</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={() =&gt; handleChargerTypeChange('BYD')}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className={`py-2 text-[11px] sm:text-sm rounded-lg font-medium transition-all ${</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>chargerType === 'BYD'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>? 'bg-slate-700 text-white shadow-sm'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>: 'text-slate-400 hover:text-white'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>}`}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>Cargador BYD</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={() =&gt; handleChargerTypeChange('AC')}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className={`py-2 text-[11px] sm:text-sm rounded-lg font-medium transition-all ${</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>chargerType === 'AC'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>? 'bg-slate-700 text-white shadow-sm'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>: 'text-slate-400 hover:text-white'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>}`}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>Pública (AC)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;button<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onClick={() =&gt; handleChargerTypeChange('DC')}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>disabled={selectedCar.maxDc === 0}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className={`py-2 text-[11px] sm:text-sm rounded-lg font-medium transition-all ${</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>chargerType === 'DC'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>? 'bg-slate-700 text-white shadow-sm'<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>: selectedCar.maxDc === 0<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>? 'opacity-30 cursor-not-allowed'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>: 'text-slate-400 hover:text-white'</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>}`}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>Pública (DC)</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/button&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{selectedCar.maxDc === 0 &amp;&amp; chargerType === 'AC' &amp;&amp; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;p className="text-xs text-orange-400 mb-4 bg-orange-400/10 p-2 rounded border border-orange-400/20"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>El {selectedCar.name} solo admite carga en Alterna (AC).</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>)}</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{chargerType === 'EMERGENCY' &amp;&amp; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;p className="text-xs text-blue-400 mb-4 bg-blue-400/10 p-2 rounded border border-blue-400/20"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>Cargador portátil para tomacorriente estándar (10A a 1.5kW).</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>)}</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{chargerType === 'BYD' &amp;&amp; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;p className="text-xs text-green-400 mb-4 bg-green-400/10 p-2 rounded border border-green-400/20"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>Cargador de pared (Wallbox) domiciliario provisto por BYD.</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>)}</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex justify-between items-end mb-4"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;label className="text-slate-400 text-sm"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>{chargerType === 'EMERGENCY' ? 'Cargador Portátil' : (chargerType === 'BYD' ? 'Wallbox BYD' : 'Surtidor Público')}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/label&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="text-3xl font-bold text-white"&gt;{chargerPower} kW&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;input<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>type="range"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>min={chargerType === 'EMERGENCY' ? 1.5 : 2}<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>max={</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>chargerType === 'DC' ? 150 :<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>(chargerType === 'EMERGENCY' ? 1.5 :<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>((chargerType === 'BYD' || chargerType === 'AC') ? ((selectedCar.id === 'atto-2' || selectedCar.id === 'song-pro') ? 7 : 22) : 22))</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>}<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>step={chargerType === 'EMERGENCY' ? 0.5 : 1}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>value={chargerPower}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>onChange={(e) =&gt; setChargerPower(Number(e.target.value))}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>disabled={chargerType === 'EMERGENCY'}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>className={`w-full ${chargerType === 'EMERGENCY' ? 'opacity-50 cursor-not-allowed' : ''}`}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>/&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex justify-between text-xs text-slate-500 mt-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>{chargerType === 'EMERGENCY' ? (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;span&gt;Fijo&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;span&gt;1.5 kW&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>) : (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;span&gt;Min (2 kW)&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>&lt;span&gt;Max ({</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                            </span>chargerType === 'DC' ? '150 kW' :<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                            </span>((chargerType === 'BYD' || chargerType === 'AC') ? ((selectedCar.id === 'atto-2' || selectedCar.id === 'song-pro') ? '7 kW' : '22 kW') : '22 kW')</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                        </span>})&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;/&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>{chargerType === 'DC' &amp;&amp; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;p className="text-xs text-blue-400 mt-3 p-2 bg-blue-400/10 rounded border border-blue-400/20"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>* Aclaración: En Argentina, la mayoría de los puntos de carga públicos actuales ofrecen hasta 50 kW.</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>{}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>{/* Columna Derecha: Resultados */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="relative group"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>{/* Efecto de brillo de fondo */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="absolute -inset-1 bg-gradient-to-r from-neon-blue to-purple-600 rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-1000"&gt;&lt;/div&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;div className="relative h-full glass-panel rounded-3xl p-8 flex flex-col items-center justify-between border-t border-l border-white/10"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;h3 className="text-slate-400 font-medium tracking-wide uppercase text-sm mb-8"&gt;Tiempo Estimado&lt;/h3&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                                </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>{/* Círculo Principal de Resultado */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="relative w-48 h-48 md:w-56 md:h-56 rounded-full border-4 border-slate-800 flex flex-col items-center justify-center shadow-[inset_0_0_30px_rgba(0,0,0,0.5)] bg-slate-900/50 mb-8"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;svg className="absolute inset-0 w-full h-full -rotate-90"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;circle<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>cx="50%" cy="50%" r="47%"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>fill="none"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>stroke="#00f0ff"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>strokeWidth="4"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>strokeDasharray={`${(percentageToCharge/100) * 295} 295`}<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>className="transition-all duration-1000 ease-out drop-shadow-[0_0_8px_#00f0ff]"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>/&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="text-4xl md:text-5xl font-bold text-white z-10 text-center"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{hours &gt; 0 &amp;&amp; &lt;span className="block"&gt;{hours}&lt;span className="text-2xl font-light text-slate-400 ml-1"&gt;h&lt;/span&gt;&lt;/span&gt;}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="block mt-1"&gt;{minutes}&lt;span className="text-2xl font-light text-slate-400 ml-1"&gt;m&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="w-full space-y-4"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="flex justify-between items-center py-2 border-b border-slate-800"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="text-slate-400 text-sm"&gt;Tramo calculado&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="font-semibold text-neon-blue"&gt;{currentBattery}% → 80%&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="flex justify-between items-center py-2 border-b border-slate-800"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="text-slate-400 text-sm"&gt;Energía a cargar&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="font-semibold"&gt;{targetEnergyKw.toFixed(1)} kWh&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="flex justify-between items-center py-2 border-b border-slate-800"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="text-slate-400 text-sm"&gt;Límite del vehículo&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="font-semibold"&gt;{maxCarPower} kW&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="flex justify-between items-center py-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className="text-slate-400 text-sm"&gt;Potencia efectiva&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;span className={`font-bold text-lg ${actualChargingPower &lt; chargerPower ? 'text-orange-400' : 'text-green-400'}`}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>{actualChargingPower} kW</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>{chargerPower &gt; maxCarPower &amp;&amp; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className="mt-4 text-[11px] leading-relaxed text-orange-200/80 bg-orange-500/10 p-3 rounded-xl border border-orange-500/20"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className="text-orange-400 mr-1"&gt;⚠️ Limitación:&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>Aunque tu cargador da {chargerPower}kW, el {selectedCar.name} asimila como máximo {maxCarPower}kW en {chargerType}.</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>{}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>{/* Sección de Costos */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;div className="w-full mt-6 pt-6 border-t border-white/10"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;h3 className="text-slate-400 font-medium tracking-wide uppercase text-sm mb-4"&gt;Costo Estimado&lt;/h3&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                                    </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;div className="space-y-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{/* EPE Santa Fe */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className={`flex justify-between items-center p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 transition-colors ${!isHomeCharging ? 'opacity-40' : 'hover:border-slate-700'}`}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="w-2 h-2 rounded-full bg-blue-500"&gt;&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className={`text-slate-300 text-sm ${!isHomeCharging ? 'line-through' : ''}`}&gt;EPE Santa Fe &lt;span className="text-[10px] text-slate-500 ml-1"&gt;($350/kWh)&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className={`font-semibold ${isHomeCharging ? 'text-white' : 'text-slate-500'}`}&gt;{isHomeCharging ? formatCurrency(costEPE) : 'N/A'}&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{/* YPF */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className={`flex justify-between items-center p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 transition-colors ${isHomeCharging ? 'opacity-40' : 'hover:border-slate-700'}`}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="w-2 h-2 rounded-full bg-[#00f0ff]"&gt;&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className={`text-slate-300 text-sm ${isHomeCharging ? 'line-through' : ''}`}&gt;YPF &lt;span className="text-[10px] text-slate-500 ml-1"&gt;($892/kWh)&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className={`font-semibold ${!isHomeCharging ? 'text-white' : 'text-slate-500'}`}&gt;{!isHomeCharging ? formatCurrency(costYPF) : 'N/A'}&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{/* ChargeBox */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;div className={`flex justify-between items-center p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 transition-colors ${isHomeCharging ? 'opacity-40' : 'hover:border-slate-700'}`}&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="w-2 h-2 rounded-full bg-green-400"&gt;&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className={`text-slate-300 text-sm ${isHomeCharging ? 'line-through' : ''}`}&gt;ChargeBox &lt;span className="text-[10px] text-slate-500 ml-1"&gt;($700/kWh)&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;span className={`font-semibold ${!isHomeCharging ? 'text-white' : 'text-slate-500'}`}&gt;{!isHomeCharging ? formatCurrency(costChargeBox) : 'N/A'}&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{/* Shell */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>{(!isHomeCharging &amp;&amp; selectedCar.id !== 'atto-2' &amp;&amp; selectedCar.id !== 'song-pro') ? (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex justify-between items-center p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 hover:border-slate-700 transition-colors"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;div className="w-2 h-2 rounded-full bg-yellow-400"&gt;&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;span className="text-slate-300 text-sm"&gt;Shell &lt;span className="text-[10px] text-slate-500 ml-1"&gt;($609/min)&lt;/span&gt;&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="font-semibold text-white"&gt;{formatCurrency(costShell)}&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>) : (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;div className="flex justify-between items-center p-3 rounded-xl bg-slate-900/60 border border-slate-800/80 opacity-40"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;div className="flex items-center gap-2"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;div className="w-2 h-2 rounded-full bg-yellow-400"&gt;&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;span className={`text-slate-300 text-sm line-through`}&gt;Shell&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                    </span>&lt;span className="text-[10px] text-slate-400 ml-1"&gt;(No disponible)&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                                </span>&lt;span className="font-semibold text-slate-500"&gt;N/A&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                                    </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>{/* Aviso sobre tarifa por minuto en cargas lentas */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>{(!isHomeCharging &amp;&amp; chargerType !== 'DC') &amp;&amp; (</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;p className="text-[10px] text-slate-500 mt-3 leading-tight"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                            </span>* Nota: La tarifa por minuto de Shell puede resultar extremadamente costosa en cargas de Alterna (AC). Suele recomendarse exclusivamente en cargadores rápidos (DC).</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                        </span>&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>)}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>{/* Footer / Redes Sociales */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;div className="mt-12 flex flex-col items-center justify-center pb-8 opacity-80 hover:opacity-100 transition-opacity"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;p className="text-slate-400 text-sm font-medium tracking-widest uppercase mb-4"&gt;¡Seguinos en nuestras redes!&lt;/p&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="flex gap-4"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>{/* Instagram */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;a href="#" target="_blank" rel="noopener noreferrer" className="glass-panel p-3 rounded-full hover:bg-gradient-to-r hover:from-purple-600/20 hover:to-pink-600/20 border-slate-800 hover:border-pink-500 transition-all duration-300 text-slate-400 hover:text-pink-400 shadow-[0_0_0_transparent] hover:shadow-[0_0_15px_rgba(236,72,153,0.3)] hover:-translate-y-1" title="Síguenos en Instagram"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;rect x="2" y="2" width="20" height="20" rx="5" ry="5"&gt;&lt;/rect&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"&gt;&lt;/path&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;line x1="17.5" y1="6.5" x2="17.51" y2="6.5"&gt;&lt;/line&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/a&gt;</span></p>
+<p class="p6"><span class="s1"><span class="Apple-converted-space">                            </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>{/* TikTok */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;a href="#" target="_blank" rel="noopener noreferrer" className="glass-panel p-3 rounded-full hover:bg-gradient-to-r hover:from-neon-blue/20 hover:to-blue-500/20 border-slate-800 hover:border-neon-blue transition-all duration-300 text-slate-400 hover:text-neon-blue shadow-[0_0_0_transparent] hover:shadow-[0_0_15px_rgba(0,240,255,0.3)] hover:-translate-y-1" title="Síguenos en TikTok"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"&gt;&lt;/path&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/a&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>{/* Firma Personal de Fede Pascale */}</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;div className="mt-8 pt-6 border-t border-slate-800/50 w-full max-w-sm flex flex-col sm:flex-row items-center justify-center gap-3"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;span className="text-slate-500 text-xs tracking-wide"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>Desarrollado por &lt;strong className="text-slate-300 font-semibold"&gt;Fede Pascale&lt;/strong&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;a<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>href="https://wa.me/543416761115?text=Hola%20Fede%20!"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>target="_blank"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>rel="noopener noreferrer"<span class="Apple-converted-space"> </span></span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>className="flex items-center gap-2 glass-panel px-4 py-2 rounded-full hover:bg-gradient-to-r hover:from-[#25D366]/20 hover:to-[#25D366]/10 border-slate-800 hover:border-[#25D366] transition-all duration-300 text-slate-400 hover:text-[#25D366] shadow-[0_0_0_transparent] hover:shadow-[0_0_15px_rgba(37,211,102,0.3)] hover:-translate-y-1"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>title="Contactar a Fede por WhatsApp"</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                    </span>&lt;path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"&gt;&lt;/path&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;/svg&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                                </span>&lt;span className="text-xs font-bold tracking-wide"&gt;Contacto&lt;/span&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                            </span>&lt;/a&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">            </span>);</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>};</span></p>
+<p class="p6"><span class="s7"></span><br></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>const root = ReactDOM.createRoot(document.getElementById('root'));</span></p>
+<p class="p5"><span class="s1"><span class="Apple-converted-space">        </span>root.render(&lt;App /&gt;);</span></p>
+<p class="p3"><span class="s2"><span class="Apple-converted-space">    </span></span><span class="s3">&lt;/</span><span class="s1">script</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s1">body</span><span class="s3">&gt;</span></p>
+<p class="p3"><span class="s3">&lt;/</span><span class="s1">html</span><span class="s3">&gt;</span></p>
+</body>
+</html>
