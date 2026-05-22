@@ -11,6 +11,12 @@
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
 
+    <!-- Vercel Web Analytics (Estadísticas) -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script src="/_vercel/insights/script.js"></script>
+
     <script>
         tailwind.config = {
             darkMode: 'class',
@@ -103,9 +109,13 @@
                 batteryKw: 18.3,
                 maxAc: 6.6,
                 maxDc: 0,
+                electricRange: 110,
                 icon: (
                     <svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 10h14m-14 0V8a2 2 0 012-2h10a2 2 0 012 2v2m-14 0l-1 5a2 2 0 002 2h16a2 2 0 002-2l-1-5M4 19v2a1 1 0 001 1h2a1 1 0 001-1v-2h8v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        {/* SUV Compacto */}
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M4 15h15M4 15l-1-3a2 2 0 011-2h2l1-3h5.5c2 0 3 1.5 3.5 3l1 3M4 15v2a1 1 0 001 1h2a1 1 0 001-1v-2h6v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M7 10h5.5M12.5 10c1.5 0 2 1 2.5 2" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M10 7v6" />
                     </svg>
                 )
             },
@@ -116,9 +126,11 @@
                 batteryKw: 45.1,
                 maxAc: 6.6,
                 maxDc: 65,
+                electricRange: 380,
                 icon: (
                     <svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 10h14m-14 0V8a2 2 0 012-2h10a2 2 0 012 2v2m-14 0l-1 5a2 2 0 002 2h16a2 2 0 002-2l-1-5M4 19v2a1 1 0 001 1h2a1 1 0 001-1v-2h8v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        {/* SUV Estándar */}
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M5 10h14m-14 0V8a2 2 0 012-2h10a2 2 0 012 2v2m-14 0l-1 5a2 2 0 002 2h16a2 2 0 002-2l-1-5M4 19v2a1 1 0 001 1h2a1 1 0 001-1v-2h8v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
                     </svg>
                 )
             },
@@ -129,9 +141,15 @@
                 batteryKw: 30.08,
                 maxAc: 6.6,
                 maxDc: 65,
+                electricRange: 300,
                 icon: (
                     <svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 12h16M5 12l1.5-4A2 2 0 018.5 7h7a2 2 0 011.5 1L18.5 12M3 17h18M4 17v2a1 1 0 001 1h2a1 1 0 001-1v-2h8v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        {/* Delfín */}
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M19.4 9.6C17.5 7.7 14.5 7 11.5 7.5C8.8 7.9 5.8 9.5 3 11C2.5 11.2 2 12.5 2 12.5C2 12.5 4.5 11.5 7 12C10.5 12.7 14.5 13 19.5 10.5C20.5 10 22 9 22 9C22 9 20.8 11 19.4 9.6Z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12.5 7.5C12.5 7.5 11 3 8 2C9.5 4.5 13.5 6 13.5 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M10 12.3C10 12.3 8 16 10.5 18C11 16 11 14 11 14" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M3 11C3 11 2 7 1 6C2 8.5 2 13 1 16C2 14.5 3 11 3 11Z" />
+                        <circle cx="17.5" cy="9.5" r="0.8" fill="currentColor" stroke="none" />
                     </svg>
                 )
             },
@@ -142,9 +160,15 @@
                 batteryKw: 43.2,
                 maxAc: 6.6,
                 maxDc: 85,
+                electricRange: 400,
                 icon: (
                     <svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 12h16M5 12l1.5-4A2 2 0 018.5 7h7a2 2 0 011.5 1L18.5 12M3 17h18M4 17v2a1 1 0 001 1h2a1 1 0 001-1v-2h8v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        {/* Delfín */}
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M19.4 9.6C17.5 7.7 14.5 7 11.5 7.5C8.8 7.9 5.8 9.5 3 11C2.5 11.2 2 12.5 2 12.5C2 12.5 4.5 11.5 7 12C10.5 12.7 14.5 13 19.5 10.5C20.5 10 22 9 22 9C22 9 20.8 11 19.4 9.6Z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12.5 7.5C12.5 7.5 11 3 8 2C9.5 4.5 13.5 6 13.5 7" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M10 12.3C10 12.3 8 16 10.5 18C11 16 11 14 11 14" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M3 11C3 11 2 7 1 6C2 8.5 2 13 1 16C2 14.5 3 11 3 11Z" />
+                        <circle cx="17.5" cy="9.5" r="0.8" fill="currentColor" stroke="none" />
                     </svg>
                 )
             },
@@ -155,10 +179,16 @@
                 batteryKw: 29.58,
                 maxAc: 6.6,
                 maxDc: 40,
+                electricRange: 100,
                 icon: (
                     <svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 14c0 0 4-4 10-4 4 0 6 1 8 2 0 0 1-2 2-2s0 4-2 5c-3 3-9 4-14 2-2-1-4-3-4-3zm9-4l-1-5h2l2 5" />
-                        <circle cx="16" cy="11.5" r="0.75" fill="currentColor" stroke="none" />
+                        {/* Tiburón */}
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M22 11C22 11 18 14.5 11 14.5C6 14.5 2 12 2 12C2 12 5 10.5 9 10C13.5 9.4 18.5 10 22 11Z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12.5 9.8L10 3L15 9" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M10.5 14.5L8.5 20L13.5 15" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M2 12L1 5L3.5 10.5L1 18L2 12Z" />
+                        <circle cx="17.5" cy="10.8" r="0.8" fill="currentColor" stroke="none" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M14.5 10.5v2.5M13.5 10.8v2" />
                     </svg>
                 )
             },
@@ -168,10 +198,14 @@
                 type: 'PHEV',
                 batteryKw: 12.9,
                 maxAc: 6.6,
-                maxDc: 0, // No soporta DC
+                maxDc: 0,
+                electricRange: 71,
                 icon: (
                     <svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 10h14m-14 0V8a2 2 0 012-2h10a2 2 0 012 2v2m-14 0l-1 5a2 2 0 002 2h16a2 2 0 002-2l-1-5M4 19v2a1 1 0 001 1h2a1 1 0 001-1v-2h8v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        {/* SUV Jerarquía (Song Pro) */}
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M3 15h18M3 15l-1-4a2 2 0 011-2h2l1.5-4h9.5l3 4h3a2 2 0 012 2l1 4M3 15v2a1 1 0 001 1h2a1 1 0 001-1v-2h10v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M6.5 9h9.5M16 9l2.5 4" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12 5v8" />
                     </svg>
                 )
             },
@@ -181,10 +215,14 @@
                 type: 'PHEV',
                 batteryKw: 18.3,
                 maxAc: 6.6,
-                maxDc: 0, // No soporta DC
+                maxDc: 0,
+                electricRange: 110,
                 icon: (
                     <svg className="w-10 h-10 mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5 10h14m-14 0V8a2 2 0 012-2h10a2 2 0 012 2v2m-14 0l-1 5a2 2 0 002 2h16a2 2 0 002-2l-1-5M4 19v2a1 1 0 001 1h2a1 1 0 001-1v-2h8v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        {/* SUV Jerarquía (Song Pro) */}
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M3 15h18M3 15l-1-4a2 2 0 011-2h2l1.5-4h9.5l3 4h3a2 2 0 012 2l1 4M3 15v2a1 1 0 001 1h2a1 1 0 001-1v-2h10v2a1 1 0 001 1h2a1 1 0 001-1v-2" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M6.5 9h9.5M16 9l2.5 4" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.2} d="M12 5v8" />
                     </svg>
                 )
             }
@@ -240,6 +278,9 @@
             
             // Energía objetivo en kWh a recargar
             const targetEnergyKw = (percentageToCharge / 100) * selectedCar.batteryKw;
+            
+            // Rango sumado en KM
+            const addedRangeKm = Math.round((percentageToCharge / 100) * selectedCar.electricRange);
             
             // Límite del coche
             const maxCarPower = (chargerType === 'AC' || chargerType === 'EMERGENCY' || chargerType === 'BYD') ? selectedCar.maxAc : selectedCar.maxDc;
@@ -502,6 +543,10 @@
                                         <span className="font-semibold">{targetEnergyKw.toFixed(1)} kWh</span>
                                     </div>
                                     <div className="flex justify-between items-center py-2 border-b border-slate-800">
+                                        <span className="text-slate-400 text-sm flex items-center gap-1">Autonomía sumada <span className="text-[10px] text-slate-500">(teórica)</span></span>
+                                        <span className="font-bold text-green-400">~{addedRangeKm} km *</span>
+                                    </div>
+                                    <div className="flex justify-between items-center py-2 border-b border-slate-800">
                                         <span className="text-slate-400 text-sm">Límite del vehículo</span>
                                         <span className="font-semibold">{maxCarPower} kW</span>
                                     </div>
@@ -518,6 +563,10 @@
                                             Aunque tu cargador da {formatPower(chargerPower)}kW, el {selectedCar.name} asimila como máximo {maxCarPower}kW en {chargerType}.
                                         </div>
                                     )}
+
+                                    <p className="text-[10px] text-slate-500 mt-3 leading-tight border-t border-slate-800/50 pt-2">
+                                        * <strong className="text-slate-400">Importante:</strong> Estimación teórica basada en homologación. La autonomía real requiere verificación en uso y varía drásticamente según el clima, velocidad, uso del aire acondicionado y estilo de manejo.
+                                    </p>
                                 </div>
 
                                 {/* Sección de Costos */}
